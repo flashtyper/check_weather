@@ -39,3 +39,6 @@ I recommend using a seperate host for this.
 
 After that you can create a grafana dashboard if you want to: 
 ![grafik](https://user-images.githubusercontent.com/83031404/126076177-078ce8cc-3252-4f20-b183-ed89d4038115.png)
+
+I am using influxDB with grafana and this dashboard regex works for me:  
+![grafik](https://user-images.githubusercontent.com/83031404/126076209-b422d201-d561-43ae-8afa-530ad2f980b3.png)
