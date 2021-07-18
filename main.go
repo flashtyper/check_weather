@@ -21,8 +21,6 @@ func main() {
         } else {
                 help()
         }
-
-
 }
 
 
