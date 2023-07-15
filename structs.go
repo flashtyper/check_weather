@@ -57,4 +57,5 @@ type Weather struct {
         Cloudiness int
         Rain float64
         Snow float64
+        FeelsLike float64
 }
