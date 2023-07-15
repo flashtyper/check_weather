@@ -51,7 +51,8 @@ func get(city string, token string) {
     weather.Cloudiness = weatherJSON.Clouds.All
     weather.Rain = weatherJSON.Rain.Hour
     weather.Snow = weatherJSON.Snow.Hour
-    fmt.Printf("Current weather in " + city + " | temp=%f pressure=%d humidity=%d wind=%f clouds=%d rain=%f snow=%f", weather.Temperature, weather.Pressure, weather.Humidity, weather.Wind, weather.Cloudiness, weather.Rain, weather.Snow)
+    weather.FeelsLike = weatherJSON.Main.FeelsLike
+    fmt.Printf("Current weather in " + city + " | temp=%f feelslike=%f pressure=%d humidity=%d wind=%f clouds=%d rain=%f snow=%f", weather.Temperature, weather.FeelsLike, weather.Pressure, weather.Humidity, weather.Wind, weather.Cloudiness, weather.Rain, weather.Snow)
     os.Exit(0)
   } else {
     fmt.Println("ERROR:", http_response.StatusCode, http.StatusText(http_response.StatusCode))
